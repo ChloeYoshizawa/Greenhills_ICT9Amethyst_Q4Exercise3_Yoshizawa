@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+	<title>JavaScript Events and Functions</title>
+</head>
+<body>
+    <input type="text" id="id1" placeholder="Centimiter"><br>
+    <input type="submit" value="Convert" onclick="myFunction()"><br>
+    <p id="answer"></p>
+    <script> 
+        function myFunction() {
+        	var num1 = document.getElementById('id1').value;
+            var num2= 30.48;  
+        	var answer = Number(num1) / Number(num2);
+        	document.getElementById('answer').innerHTML ="The value of the foot is " +  answer;
+        }  
+    </script>
+</body>
+</html>
